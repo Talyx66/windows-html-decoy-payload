@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YOU'VE BEEN HACKED</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: flash 0.3s infinite;
+      flex-direction: row;
+    }
+
+    @keyframes flash {
+      0% { background-color: red; }
+      50% { background-color: darkred; }
+      100% { background-color: red; }
+    }
+
+    .glitch-text {
+      position: absolute;
+      top: 5%;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-family: monospace;
+      font-size: 2.5em;
+      text-shadow: 2px 2px red, -2px -2px blue;
+      animation: shake 0.3s infinite;
+    }
+
+    @keyframes shake {
+      0% { transform: translate(0px, 0px); }
+      25% { transform: translate(3px, -3px); }
+      50% { transform: translate(-3px, 3px); }
+      75% { transform: translate(3px, 3px); }
+      100% { transform: translate(0px, 0px); }
+    }
+
+    .img-wrap {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      padding-top: 80px;
+    }
+
+    .main-img {
+      width: 400px;
+      height: auto;
+      z-index: 2;
+    }
+
+    .side-img {
+      width: 250px;
+      height: auto;
+      filter: contrast(150%) brightness(150%);
+      animation: pulse 1.2s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.05); }
+    }
+  </style>
+</head>
+<body>
+  <div class="glitch-text">⚡ YOU HAVE BEEN HACKED ⚡</div>
+  <div class="img-wrap">
+    <img class="side-img" src="https://media.tenor.com/iDjcDO2Kv7UAAAAM/bob-eye-horror-evil.gif" />
+    <img class="main-img" src="https://www.shutterstock.com/image-illustration/spy-agent-hacker-anonymous-black-600nw-1721933731.jpg" />
+    <img class="side-img" src="https://media.tenor.com/iDjcDO2Kv7UAAAAM/bob-eye-horror-evil.gif" />
+  </div>
+</body>
+</html>
