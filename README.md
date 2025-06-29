@@ -1,6 +1,8 @@
 # windows-html-decoy-payload
 meterpreter payload with HTML decoy site, more advanced
 
+("html_decoy_preview.mp4" is a preview/example of the html-decoy)
+
 Windows HTML Decoy + Payload Dropper
 
 This educational repo demonstrates a Windows payload launcher that:
