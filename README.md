@@ -1,5 +1,5 @@
 # windows-html-decoy-payload
-meterpreter payload with html decoy site, more advanced
+meterpreter payload with HTML decoy site, more advanced
 
 Windows HTML Decoy + Payload Dropper
 
@@ -8,7 +8,9 @@ This educational repo demonstrates a Windows payload launcher that:
 - Freezes the user's mouse for 10 seconds
 - Opens a **glitchy, red, fullscreen HTML decoy** with dramatic imagery
 
-For security researchers and red team simulation **only**.
+For security researchers and red team simulation **only**. 
+Using this tool outside of a controlled virtual environment
+without legal consent is **ILLEGAL**
 
 ---
 
